@@ -26,8 +26,8 @@ nav {
     padding: 0.5rem;
 }
 #poza_fundal {
-    height: 30vh;
     margin-block-end: 1rem;
+    height: 60vh;
 }
 main {
     display: flex;
@@ -48,5 +48,17 @@ main {
 @media (min-width: 712px) {
     nav {
         justify-content: flex-end;
+    }
+    main {
+        display: grid;
+        grid-template-areas: 
+        "CONTENT-ITEM CONTENT-ITEM CONTENT-ITEM"
+        "CONTENT-ITEM CONTENT-ITEM CONTENT-ITEM"
+        "CONTENT-ITEM CONTENT-ITEM CONTENT-ITEM"
+        "CONTENT-ITEM CONTENT-ITEM CONTENT-ITEM";
+    }
+    .content-item {
+        width: 10rem;
+        grid-area: CONTENT-ITEM;
     }
 }
