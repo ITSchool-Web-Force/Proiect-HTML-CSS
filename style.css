@@ -1,0 +1,51 @@
+:root {
+    font-size: 16px;
+}
+body {
+    margin: 0;
+    background-color: rgb(136, 135, 133);
+}
+header {
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    height: 5vh;
+    width: 100vw;
+    background-color: rgb(169, 78, 234);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu-item {
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+#poza_fundal {
+    height: 30vh;
+    margin-block-end: 1rem;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.content-item {
+    height: 20vh;
+    width: 80vw;
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+@media (min-width: 712px) {
+    nav {
+        justify-content: flex-end;
+    }
+}
