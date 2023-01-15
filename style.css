@@ -28,7 +28,7 @@ nav {
     text-decoration: none;
     color: rgb(247, 243, 243);
     text-transform: uppercase;
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: bold;
     margin: 1rem;
     justify-content: center;
@@ -54,6 +54,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     gap: 1rem;
 }
 h1 {
@@ -70,7 +71,24 @@ p {
     font-size: 1rem;
     color: rgb(137, 136, 136);
 }
+article {
+    background-color: white;
+    margin-inline: auto;
+    box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
+    box-sizing: border-box;
+}
+.containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .content-item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
     height: 40vh;
     background-color: bisque;
     border: none;
@@ -78,19 +96,9 @@ p {
     padding: 1.5rem;
     margin: 1rem;
 }
-article {
-    background-color: white;
-    margin-inline: auto;
-    box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
-    box-sizing: border-box;
-}
-.content-item {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-
+.content-item img {
+    height: 85%;
+    border-radius: 1rem;
 }
 footer {
     height: 10rem;
