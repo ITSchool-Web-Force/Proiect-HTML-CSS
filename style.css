@@ -3,62 +3,108 @@
 }
 body {
     margin: 0;
-    background-color: rgb(136, 135, 133);
+    padding: 0;
+    background-color: white;
 }
 header {
+    background-image: url("https://content.eturia.ro/images/location/ee19c936-2285-4c73-9122-d08c8db28104/c85d60aa3301c6941b21f93db25b7025/1920x1080.webp");
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 nav {
     height: 5vh;
-    width: 100vw;
-    background-color: rgb(169, 78, 234);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    padding: 1rem;
+    margin: 0;
+    border-block-end: 1px solid white;
 }
 .menu-item {
     text-decoration: none;
     color: rgb(247, 243, 243);
     text-transform: uppercase;
-    padding: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 1rem;
+    justify-content: center;
 }
-#poza_fundal {
-    margin-block-end: 1rem;
-    height: 60vh;
+header h1 {
+    justify-content: center;
+    align-items: center;
 }
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 1rem;
 }
+h1 {
+    display: block;
+    margin: 1rem 1rem;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-size: 1rem;
+    color: rgb(137, 136, 136);
+}
+p {
+    display: block;
+    margin: 1rem 1rem;
+    font-family: "Open Sans",Arial,sans-serif;
+    font-size: 1rem;
+    color: rgb(137, 136, 136);
+}
 .content-item {
-    height: 20vh;
-    width: 80vw;
+    height: 40vh;
     background-color: bisque;
-    border: 1px solid black;
+    border: none;
     border-radius: 1rem;
     padding: 1rem;
+    margin: 1rem;
+}
+article {
+    background-color: pink;
+}
+footer {
+    height: 10rem;
+    width: auto;
+    background-color: grey;
+
 }
 
-@media (min-width: 712px) {
+@media (min-width: 7px) {
     nav {
         justify-content: flex-end;
+        border-block-end: none;
     }
     main {
         display: grid;
         grid-template-areas: 
+                        "text H1"
+                        "paragraph" 
         "CONTENT-ITEM CONTENT-ITEM CONTENT-ITEM"
         "CONTENT-ITEM CONTENT-ITEM CONTENT-ITEM"
         "CONTENT-ITEM CONTENT-ITEM CONTENT-ITEM"
         "CONTENT-ITEM CONTENT-ITEM CONTENT-ITEM";
     }
     .content-item {
-        width: 10rem;
         grid-area: CONTENT-ITEM;
+        width: 25vw;
+    }
+    .menu-item {
+        font-size: 1.3rem;
+    }
+    article {
+        width: 90vw;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-block-start: 1rem;
+    }
+    h1 {
+        grid-area: text H1;
+    }
+    p {
+        grid-area: paragraph;
     }
 }
