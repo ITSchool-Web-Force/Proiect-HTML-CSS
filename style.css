@@ -32,10 +32,23 @@ nav {
     font-weight: bold;
     margin: 1rem;
     justify-content: center;
+    align-items: center;
 }
 header h1 {
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+    font-size: 6rem;
+    font-weight: bold;
+    color:rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    font-family: "Playfair Display",Georgia,serif;
+}
+header h2 {
+    margin: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "Playfair Display",Georgia,serif;
 }
 main {
     display: flex;
@@ -62,12 +75,14 @@ p {
     background-color: bisque;
     border: none;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
     margin: 1rem;
 }
 article {
-    background-color: pink;
+    background-color: white;
     margin-inline: auto;
+    box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
+    box-sizing: border-box;
 }
 .content-item {
     display: inline-flex;
