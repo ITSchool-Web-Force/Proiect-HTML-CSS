@@ -33,7 +33,7 @@ nav {
     margin: 1rem;
     justify-content: center;
     align-items: center;
-    transition: transform 2s;
+    transition: transform 5s linear;
 }
 .menu-item:hover {
     font-size: 1.2rem;
@@ -94,6 +94,12 @@ article {
     margin-inline: auto;
     box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
     box-sizing: border-box;
+    transition: transform 2s;
+}
+article:hover {
+    transform: scale(101%);
+    box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(13, 213, 213, 0.5);
+
 }
 .containers {
     display: flex;
