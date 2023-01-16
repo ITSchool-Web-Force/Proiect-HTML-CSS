@@ -14,14 +14,10 @@ body {
     box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
 }
 nav {
-    height: 20rem;
     width: 100%;
-    background-color: pink;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    background-image: url("https://content.eturia.ro/images/location/ee19c936-2285-4c73-9122-d08c8db28104/c85d60aa3301c6941b21f93db25b7025/1920x1080.webp");
-
 }
 .menu-item {
     text-decoration: none;
@@ -31,7 +27,40 @@ nav {
     text-transform: uppercase;
     padding: 1rem;
     color: white;
-
+}
+header {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url("https://content.eturia.ro/images/location/ee19c936-2285-4c73-9122-d08c8db28104/c85d60aa3301c6941b21f93db25b7025/1920x1080.webp");
+}
+header h1 {
+    margin: auto;
+    font-size: 2.7rem;
+    font-weight: bold;
+    color:rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    font-family: "Playfair Display",Georgia,serif;
+    transition: transform 3s;
+}
+header h1:hover {
+    transform: scale(130%);
+}
+header h2 {
+    margin: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "Playfair Display",Georgia,serif;
+    justify-content: center;
+    align-items: flex-start;
+    transition: transform 3s;
+}
+header h2:hover{
+    transform: translateY(-1rem);
 }
 main {
     padding: 1rem;
@@ -42,6 +71,14 @@ main h1 {
     justify-content: center;
     align-items: center;
 
+}
+main img {
+    width: 60%;
+    height: auto;
+    border-radius: 1rem;
+    margin-inline: auto;
+    padding: 1rem;
+    box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
 }
 footer {
     height: 3rem;
