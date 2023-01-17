@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+    header {
+        background-image: url("../poze_descopera/poza_aurora_boreala.jpg");
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1rem;
+        margin: 0;
+        border-block-end: 1px solid white;
+    }
+    .menu-item {
+        text-decoration: none;
+        color: rgb(247, 243, 243);
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 1rem;
+        justify-content: center;
+        align-items: center;
+        transition: transform 5s linear;
+    }
+    .menu-item:hover {
+        font-size: 1.5rem;
+        color: red;
+        border-block-end: 1px solid white;
+    }
+    
+    header h1 {
+        margin: auto;
+        font-size: 2.7rem;
+        font-weight: bold;
+        color:rgba(255, 255, 255, 0.3);
+        text-transform: uppercase;
+        font-family: "Playfair Display",Georgia,serif;
+        margin-block-end: 0;
+        transition: transform 3s;
+    }
+    header h1:hover {
+        transform: scale(130%);
+    }
+    header h2 {
+        margin: auto;
+        font-size: 3rem;
+        font-weight: bold;
+        color:rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-family: "Playfair Display",Georgia,serif;
+        margin-block-start: 0;
+        transition: transform 3s;
+    }
+    header h2:hover{
+        transform: translateY(-1rem);
+    }
+    .text {
+        width:70vw;
+        height: auto;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .text h1 {
+        margin-inline: auto;
+        font-size: 3rem;
+    }
+    .item {
+        border: 1px solid grey;
+        border-radius: 3rem;
+        padding: 1rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-areas: 
+        ".  TITLU  TITLU    ." 
+        ".  IMG    PARAGRAF .";
+        grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+        grid-template-rows: 0.2fr 2fr;
+    }
+    .text img {
+        grid-area: IMG;
+        width: 30vw;
+        border-radius: 15rem;
+    }
+    .text p {
+        grid-area: PARAGRAF;
+    }
+    .text h2 {
+        grid-area: TITLU;
+        margin-inline: auto;
+    }
+    footer {
+        height: 3rem;
+        width: auto;
+        background-color: rgb(191, 188, 188);
+        padding: 1rem;
+        margin-block-start: 2rem;
+    }
