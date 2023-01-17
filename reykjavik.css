@@ -18,20 +18,30 @@ body {
     font-size: 1rem;
 }
 nav {
-    height: 5vh;
+    height: 10vh;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+    box-sizing: border-box;
 }
 .menu-item {
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 1rem;
+    padding: 0;
     color: white;
+    border-block-end: 1px solid white;
+}
+.menu-item:hover {
+    font-size: 1.5rem;
+    color: red;
+    border-block-end: 1px solid white;
 }
 header {
     height: 50vh;

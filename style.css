@@ -36,7 +36,7 @@ nav {
     transition: transform 5s linear;
 }
 .menu-item:hover {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: red;
     border-block-end: 1px solid white;
 }
