@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+height:100%;
+background-color:#000;
+background-image:url(images/back.jpg);
+background-attachment: fixed;
+background-position: 50% 5%;
+scroll-behavior: smooth;
+}
+
+html {
+font-family:Arial,Helvetica,sans-serif;
+display:table;
+margin:auto;
+
+}
+
+body {
+display:table-cell;
+vertical-align:top;
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+}
+
+.wrapper img {
+vertical-align: middle;
+max-width:55.11vw;
+max-height: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 0px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header {
+margin:.625rem 0 0;
+max-width:100%;
+max-height: 100%;
+}
+
+#menu {
+background-image:linear-gradient(to bottom,#454545 50%,#454545,black,black 50%);
+padding:0.6vw 0.9vw;
+text-align:center;
+line-height:1hw;
+font-size:0.95vw;
+font-weight:bold;
+text-transform:uppercase;
+max-width:55.11vw;
+min-width:10vw;
+max-height: 2.32vw;
+border-style:solid;
+border-width:1px;
+border-color:grey
+}
+
+a.link-menu:link {
+color:#fff;
+text-decoration:none;
+padding:0.6vw 0.9vw;
+max-height: 2.32vw;
+}
+
+a.link-menu:visited {
+color:#fff;
+text-decoration:none;
+padding:0.6vw 0.9vw;
+max-height: 2.32vw;
+}
+
+a.link-menu:hover, active {
+color:#fff;
+text-decoration:none;
+padding:0.6vw 0.9vw;
+background-image:linear-gradient(to bottom,red 50%,red,darkred,darkred 50%);
+max-height: 2.32vw;
+}
+
+.dropdown {
+position:relative;
+display:inline-block
+}
+
+.dropdown-content {
+display:none;
+position:absolute;
+margin-top:1vh;
+background-color:#000;
+min-width:9vw;
+z-index:1;
+text-align:left;
+border-style:solid;
+border-width:0.1vw;
+border-color:grey;
+text-transform:none;
+}
+
+.dropdown-content a {
+color:#fff;
+padding:0.6vw 0.9vw;
+text-decoration:none;
+display:block;
+max-height: 100%;
+}
+
+.dropdown-content a:hover {
+background-color:#454545
+}
+
+.dropdown:hover .dropdown-content {
+display:block
+}
+
+article {
+height:auto;
+background-color:#000;
+font-size:0.714vw;
+text-align: justify;
+color:#fff;
+max-width:55.11vw;
+padding:0.6vw 0.89vw;
+box-shadow:0 0.6vw 1.19vw silver,0 0 0.6vw silver;
+border-radius:0 0 0.476vw 0.476vw;
+line-height:1.8;
+}
+
+footer {
+color:#fff;
+font-size:0.81vw;
+text-align:center;
+margin: 0.48vw 0 0.95vw 0;
+height:auto;
+background-color:#000;
+max-width:55.11vw;
+padding: 0.5vw 0.89vw 0.89vw 0.89vw;
+box-shadow:0 0.6vw 1.19vw silver,0 0 0.6vw silver;
+border-radius: 0.476vw;
+}
+
+.bold-text {
+font-weight:bold;
+}
+
+.italic-text {
+font-style:italic
+}
+
+p {
+text-indent:1.78vw;
+}
+
+h1{
+  font-family: Times New Roman;
+  font-size: 2.85vw;
+  line-height: 0.3;
+}
+
+h2{
+text-align: center;
+margin: 0;
+text-transform: uppercase;
+font-size:1.43vw;
+}
+
+h3 {
+font-size:0.95vw;
+margin: 1.90vw 0 0.95vw 0;
+}
+
+h4 {
+font-size:0.9vw;
+margin: 0.95vw 0 0.95vw 0;
+}
+
+h5 {
+font-size:0.71vw;
+margin: 0.95vw 0 0.95vw 0;
+}
+
+h6 {
+font-size:0.65vw;
+margin: 0;
+}
+
+.flex-container {
+display: flex;
+flex-wrap: wrap;
+font-size: 0.71vw;
+text-align: center;
+margin: 0.6vw 0 0 0;
+}
+
+.flex-item {
+padding: 0.031vw;
+flex: 0%;
+text-decoration: none;
+color: white;
+}
+
+.flex-item a {
+color: white;
+text-decoration: none;
+}
+
+.flex-item a:hover {
+text-decoration: underline;
+}
+
+@media (max-width: 6.25rem) {
+.flex-item {
+flex: 100%;
+  }
+}
+
+blockquote{
+margin-bottom: 0px;
+}
+
+cite {
+text-align:right;
+display: block;
+margin-top: 0px;
+}
+
+.bio-artist-image{
+display: block;
+margin: auto;
+max-width: 8.93vw;
+height: 11.9vw;
+}
+
+.figure{
+float: right;
+margin: 0 0 0.59vw 0.59vw;
+padding: 0.59vw;
+border: 1px solid grey;
+}
+
+.discography-image{
+max-width: 12.38vw;
+height: 12.38vw;
+display: block;
+margin: auto;
+}
+
+.album-caption{
+text-align: center;
+font-style: italic;
+padding-bottom: 0.6;
+}
+
+.album-details{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+.clear{
+clear:both;
+}
+
+.columns-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap:10%;
+}
+
+.columns-container > div {
+  max-width: 100%;
+  margin: 0px;
+}
