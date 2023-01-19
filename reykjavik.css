@@ -4,6 +4,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Open Sans",Arial,sans-serif;
 }
 .wrapper {
     --margin: 5rem;
@@ -27,16 +28,16 @@ nav {
     padding: 1rem;
     gap: 1rem;
     box-sizing: border-box;
+    border-block-end: 1px solid rgba(255,255,255,0.3);
 }
 .menu-item {
     text-decoration: none;
     color: black;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     padding: 0;
     color: white;
-    border-block-end: 1px solid white;
 }
 .menu-item:hover {
     font-size: 1.5rem;
