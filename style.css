@@ -173,7 +173,7 @@ footer {
 
 @media (min-width: 712px) {
     header {
-        background-image: url('https://content.eturia.ro/images/location/ee19c936-2285-4c73-9122-d08c8db28104/c958d0a7d9297c7daa5283791e297c95/1920x1080.webp');
+        background-image: url('../poze_index/oras.jpg');
     }
     nav {
         justify-content: flex-end;
