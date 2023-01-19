@@ -8,7 +8,7 @@ body {
     font-family: "Open Sans",Arial,sans-serif;
 }
 header {
-    background-image: url("https://content.eturia.ro/images/location/ee19c936-2285-4c73-9122-d08c8db28104/c85d60aa3301c6941b21f93db25b7025/1920x1080.webp");
+    background-image: url("../poze_index/ghetari.jpg");
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -41,7 +41,6 @@ nav {
     color: red;
     border-block-end: 1px solid white;
 }
-
 header h1 {
     margin: auto;
     font-size: 2.7rem;
@@ -68,7 +67,6 @@ header h2 {
 header h2:hover{
     transform: translateY(-1rem);
 }
-
 main {
     display: flex;
     flex-direction: column;
@@ -100,7 +98,6 @@ article {
 article:hover {
     transform: scale(101%);
     box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(13, 213, 213, 0.5);
-
 }
 .containers {
     display: flex;

@@ -106,6 +106,10 @@ body {
         padding: 1rem;
         margin-block-start: 2rem;
     }
+    #heart {
+        font-size: 1rem;
+        animation: heart 3s infinite;
+    }
 @media (min-width: 450px) {
     header h1 {
         font-size: 4rem;
@@ -151,4 +155,35 @@ body {
     .text {
         width: 70vw;
     }
+    }
+    @keyframes heart {
+        0% {
+            animation-timing-function: linear;
+            font-size: 1.2rem;
+        }
+        20% {
+            animation-timing-function: linear;
+            font-size: 1.5rem;
+        }
+        40% {
+            animation-timing-function: linear;
+            font-size: 1.8rem;
+        }
+        60% {
+            animation-timing-function: linear;
+            font-size: 2rem;
+        }
+        80% {
+            animation-timing-function: linear;
+            font-size: 1.8rem;
+        }
+        90% {
+            animation-timing-function: linear;
+            font-size: 1.5rem;
+        }
+        100% {
+            animation-timing-function: linear;
+            font-size: 1rem;
+        }
+        
     }
