@@ -67,9 +67,15 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: grey;
+        background-color: rgb(242, 241, 241);
         border-radius: 2rem;
         padding: 1px;
+        box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
+        box-sizing: border-box;
+        padding-inline: 1rem;
+    }
+    .item h2 {
+        text-align: center;
     }
     .text {
         width:70vw;
@@ -78,6 +84,9 @@ body {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+    }
+    .text h2 {
+        text-align: center;
     }
     .text h1 {
         margin-inline: auto;
