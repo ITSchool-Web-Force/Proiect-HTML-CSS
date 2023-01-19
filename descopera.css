@@ -81,6 +81,7 @@ body {
     }
     .item p {
         margin-block: 0;
+        padding: 1rem;
     }
     .text {
         width:95vw;
