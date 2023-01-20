@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Explora&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  background-image: linear-gradient(to right, #000000, #130f40, #000000);
+  min-height: 100vh;
+}
+
+.nav-bar {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-bar img {
+  max-width: 18rem;
+  max-height: 5.4rem;
+  padding-inline-start: 0.3rem;
+}
+.nav-bar nav {
+  display: flex;
+  flex-direction: column;
+}
+.menu-items .menu-item {
+  text-decoration: none;
+  color: white;
+  padding-block: 0.1rem;
+  font-weight: 800;
+}
+.menu-item:hover {
+  transform: scale(110%);
+}
+
+main {
+  padding-block: 7rem 9rem;
+  height: 100vh;
+  overflow: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  text-align: center;
+  margin-block-end: 2rem;
+}
+.container-appt {
+  margin-block: 0.7rem;
+}
+.text-appt {
+  font-family: "Explora", sans-serif;
+  font-size: 2rem;
+}
+.title-appt {
+  font-size: 1.4rem;
+  margin-block-end: 0.5rem;
+  font-style: italic;
+}
+#text {
+  margin-block-start: 1rem;
+  height: 3rem;
+  width: 9rem;
+  text-align: start;
+}
+#date {
+  width: 9rem;
+}
+.submit-btn {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.container-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-nav a {
+  color: white;
+  font-size: 1rem;
+  padding: 0.1rem;
+}
+.locations {
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+    .nav-bar nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4rem;
+      gap: 1rem;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .nav-bar nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+      gap: 1.4rem;
+    }
+  }

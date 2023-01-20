@@ -8,6 +8,7 @@
 }
 body {
   background-image: linear-gradient(to right, #000000, #130f40, #000000);
+  min-height: 100vh;
 }
 
 .nav-bar {

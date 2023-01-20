@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="appointment.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment</title>
+  </head>
+  <body>
+    <header class="nav-bar">
+      <img src="photos/logo.png" alt="logo" id="logo" />
+      <nav class="menu-items">
+        <a href="index.html" class="menu-item">Home</a>
+        <a href="#" class="menu-item">About</a>
+        <a href="artists.html" class="menu-item">Artists</a>
+        <a href="appointment.html" class="menu-item">Appointment</a>
+      </nav>
+    </header>
+
+    <main>
+      <label class="container">
+        <input
+          type="text"
+          id="fname"
+          minlength="3"
+          placeholder="First Name"
+          required
+        />
+        <input
+          type="text"
+          id="lname"
+          minlength="3"
+          placeholder="Last Name"
+          required
+        />
+        <input type="date" id="date" required />
+        <input
+          type="email"
+          id="email"
+          placeholder="example@example.com"
+          pattern=".+@globex\.com"
+        />
+        <div class="container-appt">
+          <h2 class="title-appt">Do you have a preferred Tattoo Artist?</h2>
+          <p class="text-appt">
+            If the artist you mentioned is not available, another artist will
+            get in touch with you.
+          </p>
+          <input type="text" id="text" required minlength="30" placeholder="type.." >
+        </div>
+        <div class="container-appt">
+          <h2 class="title-appt">Please describe your idea.</h2>
+          <p class="text-appt">
+            Please let us know, if you are in New York just for spcial days.
+          </p>
+          <input type="text" id="text" minlength="30" placeholder="type.." required />
+        </div>
+        <div class="container-appt">
+          <h2 class="title-appt">
+            Help us with a photo of the part of your body to be tattooed:
+          </h2>
+          <p class="text-appt"></p>
+          <input type="file"  id="photo"required />
+        </div>
+        <div class="container-appt">
+          <h2 class="title-appt">Here you can upload reference images:</h2>
+          <input type="file" id="photo" multiple required />
+        </div>
+      </label>
+      <button class="submit-btn" type="submit">Submit</button>
+    </main>
+
+    <footer class="container-footer">
+      <div class="locations">
+        <h2>Locations</h2>
+        <p>62 Grand Street New York NY 10013</p>
+        <p>328 Broome Street New York NY 10002</p>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <nav class="footer-nav">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
