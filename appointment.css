@@ -69,9 +69,7 @@ main {
   width: 9rem;
   text-align: start;
 }
-#date {
-  width: 9rem;
-}
+
 .submit-btn {
   position: relative;
   left: 50%;
