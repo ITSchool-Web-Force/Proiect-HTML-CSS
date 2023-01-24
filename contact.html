@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.png" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="topBar">
+        <div class="rapidContact">
+          <span>
+            <i class="bx bxs-phone-call"></i>contact:
+            <strong>
+              <!-- fake number -->
+              <a style="color: #1c84d4; text-decoration: underline" href="#"
+                >+40700-00-00-00</a
+              >
+            </strong>
+            &nbsp; | <i class="bx bx-calendar"></i>schedule: mon. - fri. : 10:00
+            - 19:00
+          </span>
+        </div>
+        <div class="searchContent">
+          <form>
+            <input
+              type="text"
+              class="searchbar_content"
+              placeholder="Looking for..."
+            />
+            <button class="searchbar_btn">
+              <i class="bx bx-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <nav>
+        <div class="logo">
+          <img
+            src="./images/Removal-692.png"
+            alt="logo"
+            width="50"
+            heigh="auto"
+          />
+        </div>
+        <span class="site-name">ental Clinic</span>
+        <div class="links">
+          <a href="./index.html" id="active">home</a>
+          <a href="./gallery.html">galery</a>
+          <a href="#">contact</a>
+        </div>
+      </nav>
+    </div>
+    <section>
+      <div class="contactBox">
+        <div class="title-contact-pg">
+          <h2>let's get in touch</h2>
+        </div>
+        <div class="contactBody">
+          <div class="contact info">
+            <h4 class="contact-info-title">ho will you find us</h4>
+            <div class="infoContainer">
+              <div class="servicesItem">
+                <div class="services_Info">
+                  <div class="icon">
+                    <i class="bx bx-map"></i>
+                  </div>
+                  <div class="text_Info">
+                    <p>Giurgiului road 109A</p>
+                  </div>
+                </div>
+              </div>
+              <div class="servicesItem">
+                <div class="services_Info">
+                  <div class="icon">
+                    <i class="bx bx-envelope-open"></i>
+                  </div>
+                  <div class="text_Info">
+                    <a href="mailto:email@example.com">email@example.com</a>
+                  </div>
+                </div>
+              </div>
+              <div class="servicesItem">
+                <div class="services_Info">
+                  <div class="icon">
+                    <i class="bx bx-phone-call"></i>
+                  </div>
+                  <div class="text_Info">
+                    <p>Giurgiului road:</p>
+                    <a href="#">0700-00-00</a>
+                  </div>
+                </div>
+              </div>
+              <div class="servicesItem">
+                <div class="services_Info">
+                  <div class="icon">
+                    <i class="bx bx-time"></i>
+                  </div>
+                  <div class="text_Info">
+                    <p>monday-friday:</p>
+                    <p>10:00-19:00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2850.979001403955!2d26.091978765392227!3d44.39255277910295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1fe4a99cc9d53%3A0xf3b34fa89f02ef1!2s%C8%98oseaua%20Giurgiului%20109A%2C%20Bucure%C8%99ti!5e0!3m2!1sro!2sro!4v1674231160823!5m2!1sro!2sro"
+              style="border: 0"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+          <div class="contact form">
+            <form>
+              <h4>contact us</h4>
+              <div class="formContainer">
+                <div class="row_left_right">
+                  <div class="inputContainer">
+                    <label class="important">first name</label>
+                    <input
+                      type="text"
+                      required
+                      placeholder="enter first name"
+                    />
+                  </div>
+                  <div class="inputContainer">
+                    <label class="important">last name</label>
+                    <input type="text" required placeholder="enter last name" />
+                  </div>
+                </div>
+                <div class="row_left_right">
+                  <div class="inputContainer">
+                    <label class="important">email</label>
+                    <input
+                      type="email"
+                      required
+                      placeholder="email@example.com"
+                    />
+                  </div>
+                  <div class="inputContainer">
+                    <label class="important">mobile</label>
+                    <input type="text" required placeholder="0700-00-00-00" />
+                  </div>
+                </div>
+                <div class="row-below">
+                  <div class="inputContainer">
+                    <label class="optional">message</label>
+                    <textarea placeholder="write us here..."></textarea>
+                  </div>
+                  <div class="inputContainer checkBigBox">
+                    <input id="checkbox" type="checkbox" />
+                    <label for="checkbox" class="optional">
+                      <span id="terms_agreement">I agree to these</span>&nbsp;<a
+                        href="#"
+                        style="color: #1c84d4; text-decoration: underline"
+                        >Terms &amp; Conditions</a
+                      ></label
+                    >
+                  </div>
+                  <div class="inputContainer">
+                    <button id="btn-submit-contact" type="submit">
+                      <span>Send</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>ways to get there</h2>
+        <div class="transport">
+          <div class="bus">
+            <i class="bx bx-bus transport_icons"></i
+            ><span class="transport_title">take the bus</span>
+            <p>
+              Giurgiului Road 109A, Bucharest,take bus 323 from Piata Sudului
+            </p>
+          </div>
+          <div class="parking">
+            <i class="bx bxs-parking transport_icons"></i
+            ><span class="transport_title">parking area</span>
+            <p>gives you unlimited parking spaces</p>
+          </div>
+          <div class="train">
+            <i class="bx bx-train transport_icons"></i
+            ><span class="transport_title">take the train</span>
+            <p>the subway from Muncii station.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-list">
+          <div>
+            <h3>treatments</h3>
+            <ul>
+              <li>dental aesthetics</li>
+              <li>prophylaxis</li>
+              <li>prosthetic dentistry</li>
+              <li>orthodontics</li>
+            </ul>
+          </div>
+          <div>
+            <h3>dental med</h3>
+            <ul>
+              <li>about us</li>
+              <li>media</li>
+              <li>treatments</li>
+              <li>galery</li>
+            </ul>
+          </div>
+          <div>
+            <h3>team</h3>
+            <ul>
+              <li>yuko sasak</li>
+              <li>jonathan lawrence</li>
+              <li>jade barns</li>
+            </ul>
+          </div>
+          <div>
+            <h3>legal</h3>
+            <ul>
+              <li>tems and conditions</li>
+              <li>privacy policy</li>
+              <li>cookie policy</li>
+            </ul>
+          </div>
+          <div class="social-media">
+            <h3>social media & contact</h3>
+            <ul>
+              <li>
+                <a href="#"><i class="bx bxl-facebook-circle"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bxl-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
