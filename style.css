@@ -13,34 +13,6 @@ header {
     display: flex;
     flex-direction: column;
 }
-nav {
-    height: 5vh;
-    font-size: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 1rem;
-    margin: 0;
-    border-block-end: 1px solid rgba(255,255,255,0.3);
-}
-.menu-item {
-    text-decoration: none;
-    color: rgb(247, 243, 243);
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: bold;
-    margin: 1rem;
-    justify-content: center;
-    align-items: center;
-    transition: transform 5s linear;
-}
-.menu-item:hover {
-    font-size: 1.5rem;
-    color: red;
-    border-block-end: 1px solid white;
-}
 header h1 {
     margin: auto;
     font-size: 2.7rem;
@@ -77,17 +49,17 @@ main {
 h1 {
     display: block;
     text-align: center;
-    margin: 1rem 1rem;
+    margin: 2rem 1rem;
     font-family: "Open Sans",Arial,sans-serif;
     font-size: 1rem;
-    color: rgb(137, 136, 136);
+    color:  #11316c;
 }
 p {
     display: block;
     margin: 1rem 1rem;
     font-family: "Open Sans",Arial,sans-serif;
     font-size: 1rem;
-    color: rgb(137, 136, 136);
+    color:  #11316c;
 }
 article {
     background-color: white;
@@ -133,17 +105,6 @@ article:hover {
     color: black;
     font-weight: bold;
 }
-footer {
-    height: 3rem;
-    width: auto;
-    background-color: rgb(191, 188, 188);
-    padding: 1rem;
-    margin-block-start: 2rem;
-}
-#heart {
-    font-size: 1rem;
-    animation: heart 3s infinite;
-}
 @media (min-width: 500px) {
     header h1 {
         font-size: 4rem;
@@ -175,11 +136,6 @@ footer {
 @media (min-width: 712px) {
     header {
         background-image: url('../poze_index/oras.jpg');
-    }
-    nav {
-        justify-content: flex-end;
-        border-block-end: none;
-        background-color: rgba(255,255,255,0);
     }
     main {
         display: grid;
@@ -238,34 +194,4 @@ footer {
         width: auto;
     }
 }
-@keyframes heart {
-    0% {
-        animation-timing-function: linear;
-        font-size: 1.2rem;
-    }
-    20% {
-        animation-timing-function: linear;
-        font-size: 1.5rem;
-    }
-    40% {
-        animation-timing-function: linear;
-        font-size: 1.8rem;
-    }
-    60% {
-        animation-timing-function: linear;
-        font-size: 2rem;
-    }
-    80% {
-        animation-timing-function: linear;
-        font-size: 1.8rem;
-    }
-    90% {
-        animation-timing-function: linear;
-        font-size: 1.5rem;
-    }
-    100% {
-        animation-timing-function: linear;
-        font-size: 1rem;
-    }
-    
-}
+

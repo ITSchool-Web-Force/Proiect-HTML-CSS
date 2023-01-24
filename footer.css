@@ -1,0 +1,45 @@
+footer {
+    height: 4.2rem;
+    width: auto;
+    background-color: rgba(186, 185, 185, 0.5);
+    padding: 1rem;
+    margin-block-start: 1rem;
+}
+.footer-text {
+    inset-block-start: 1rem;
+}
+#heart {
+    font-size: 1rem;
+    animation: heart 3s infinite;
+}
+@keyframes heart {
+    0% {
+        animation-timing-function: linear;
+        font-size: 1.2rem;
+    }
+    20% {
+        animation-timing-function: linear;
+        font-size: 1.5rem;
+    }
+    40% {
+        animation-timing-function: linear;
+        font-size: 1.8rem;
+    }
+    60% {
+        animation-timing-function: linear;
+        font-size: 2rem;
+    }
+    80% {
+        animation-timing-function: linear;
+        font-size: 1.8rem;
+    }
+    90% {
+        animation-timing-function: linear;
+        font-size: 1.5rem;
+    }
+    100% {
+        animation-timing-function: linear;
+        font-size: 1rem;
+    }
+    
+}

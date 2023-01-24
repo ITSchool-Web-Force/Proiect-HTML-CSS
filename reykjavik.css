@@ -9,7 +9,7 @@ body {
 .wrapper {
     --margin: 5rem;
 
-    min-height: calc(100vh - 2 * var(--margin));
+    min-height: calc(100vh - 2*var(--margin));
     width: 95vw;
     margin-inline: auto;
     background-color:  #f7f7f7;
@@ -18,37 +18,11 @@ body {
     font-family: Fira Sans,-apple-system,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 1rem;
 }
-nav {
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    gap: 1rem;
-    box-sizing: border-box;
-    border-block-end: 1px solid rgba(255,255,255,0.3);
-}
-.menu-item {
-    text-decoration: none;
-    color: black;
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 0;
-    color: white;
-}
-.menu-item:hover {
-    font-size: 1.5rem;
-    color: red;
-    border-block-end: 1px solid white;
-}
 header {
     height: 50vh;
     display: flex;
     flex-direction: column;
-    background-image: url("https://content.eturia.ro/images/location/ee19c936-2285-4c73-9122-d08c8db28104/c85d60aa3301c6941b21f93db25b7025/1920x1080.webp");
+    background-image: url("../poze_reykjavik/ghetari.jpg");
 }
 header h1 {
     margin-inline: auto;
@@ -105,24 +79,15 @@ main p {
     font-weight: bold;
     font-size: 1.5rem;
 }
-footer {
-    height: 3rem;
-    width: auto;
-    background-color: rgb(191, 188, 188);
-    padding: 1rem;
-    margin-block-start: 2rem;
-}
-#heart {
-    font-size: 1rem;
-    animation: heart 3s infinite;
-}
 @media (min-width: 600px) {
     header h1 {
         font-size: 4rem;
     }
-    nav {
-        justify-content: flex-end;
+@media (min-width: 700px) {
+    header h1 {
+        margin-block-start: 5%;
     }
+}
 @media (min-width: 800px) {
     .wrapper {
         width: 70vw;
@@ -131,35 +96,4 @@ footer {
         margin-block-start: 10%;
     }
 }
-}
-@keyframes heart {
-    0% {
-        animation-timing-function: linear;
-        font-size: 1.2rem;
-    }
-    20% {
-        animation-timing-function: linear;
-        font-size: 1.5rem;
-    }
-    40% {
-        animation-timing-function: linear;
-        font-size: 1.8rem;
-    }
-    60% {
-        animation-timing-function: linear;
-        font-size: 2rem;
-    }
-    80% {
-        animation-timing-function: linear;
-        font-size: 1.8rem;
-    }
-    90% {
-        animation-timing-function: linear;
-        font-size: 1.5rem;
-    }
-    100% {
-        animation-timing-function: linear;
-        font-size: 1rem;
-    }
-    
 }
