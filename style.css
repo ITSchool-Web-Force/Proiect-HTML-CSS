@@ -268,6 +268,10 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+.main-content.contact {
+  gap: 1rem;
+  height: calc(100vh - 3rem);
+}
 .breadcrumb {
   font: 1rem var(--font-body);
   display: flex;
@@ -315,6 +319,44 @@ h1 {
 .detail-page h1 {
   font: 1.5rem var(--font-headers);
   font-weight: 500;
+}
+.detail-page .item-intro {
+  align-items: center;
+}
+.hero-button-2 {
+  font: 1rem var(--font-body);
+  color: var(--body-text-color);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 0.5em 2em;
+  border: 2px solid var(--body-text-color);
+  background-color: rgba(0, 0, 0, 0);
+  max-width: 15rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+.hero-button-2:hover {
+  color: var(--off-white);
+  background: var(--body-text-color);
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 25rem;
+}
+input, textarea {
+  padding: 0.5em;
+  border:0; 
+  width: 100%;
+  font: 1rem var(--font-body);
+}
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  outline: none;
+}
+input::placeholder, textarea::placeholder {
+  opacity: 0.5;
 }
 /* Responsive */
 @media (min-width: 48rem) {
@@ -380,5 +422,8 @@ h1 {
   }
   .hero-subtitle {
     font-size: 1.4rem;
+  }
+  .main-content {
+    padding: 5rem;
   }
 }
