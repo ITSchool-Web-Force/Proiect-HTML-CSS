@@ -1,4 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Oooh+Baby&display=swap");
+:root {
+  --font-logo: 2rem "Oooh Baby", cursive;
+  --font-headers: "Cormorant Garamond", serif;
+  --font-body: "Biryani", sans-serif;
+  --body-text-color: #474747; /* Charcoal color for text/dark */
+  --main-color: #f5f3ed; /* Oyster color for backgrounds */
+  --secondary-color: #e2d3c0; /* Toast color for dark accents */
+  --tertiary-color: #eae3d9; /* Nude color for mid accents */
+  --off-white: #f9f7f4; /* Ivory color for light accents */
+}
+html {
+  scroll-behavior: smooth;
+}
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+.wrapper {
+  margin: auto;
+}
+/* Header + nav*/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: var(--off-white);
+  z-index: 2;
+  padding: 1rem;
+}
+nav {
+  list-style-type: none;
+  position: absolute;
+  top: 100%;
+  background: var(--body-text-color);
+  left: 0;
+  display: none;
+  box-shadow: 0 0.1rem 0.5rem 0 rgb(0 0 0 / 0.2);
+}
+nav ul {
+  list-style-type: none;
+  font: 1rem var(--font-body);
+  font-weight: 300;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  border-block-end: 1px solid rgba(255, 255, 255, 0.025);
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding-inline: 3.5rem;
+  color: var(--off-white);
+  transition: 0.3s ease;
+}
+nav a:hover {
+  color: var(--body-text-color);
+  background-color: var(--off-white);
+}
+.nav-toggle {
+  display: none;
+}
+.nav-toggle:checked ~ nav {
+  display: flex;
+}
+.nav-toggle-label::before {
+  content: "\f0c9";
+  font: var(--fa-font-solid);
+  font-size: 1.5em;
+  color: var(--body-text-color);
+  cursor: pointer;
+}
+/* Logo image + text */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo p {
+  font: var(--font-logo);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--body-text-color);
+}
+.logo p::before {
+  content: "Bari";
+  font: 1.5rem var(--font-body);
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.logo-svg {
+  height: 3rem;
+}
+/* Hero intro */
+.hero-intro-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  height: 100vh;
+  background: var(--off-white);
+}
+.hero-image,
+.hero-content {
+  grid-row: 1 / 2;
+}
+.hero-content {
+  grid-column: 1 / 4;
+  color: var(--body-text-color);
+  align-self: center;
+  z-index: 1;
+  padding: 1.5rem;
+  display: grid;
+  gap: 2rem;
+  background-color: var(--off-white);
+  margin-inline: 1rem;
+  -webkit-box-shadow: 0px 0.3em 0.3em 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0.3em 0.3em 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0.3em 0.3em 0px rgba(0, 0, 0, 0.1);
+}
+.hero-image {
+  grid-column: 1 / 4;
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+  object-position: 80% 5rem;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 1)),
+    to(rgb(0 0 0 / 30%))
+  );
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+.hero-title {
+  font: 2rem var(--font-headers);
+  font-style: italic;
+  font-weight: 600;
+  text-transform: capitalize;
+  overflow-wrap: break-word;
+}
+.hero-subtitle {
+  font: 1.1rem var(--font-body);
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+.hero-button {
+  font: 1rem var(--font-body);
+  color: var(--body-text-color);
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 0.5em;
+  border: 2px solid var(--body-text-color);
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  max-width: 15rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+.hero-button::after {
+  content: "";
+  background-color: var(--secondary-color);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.3s ease;
+}
+.hero-button:hover {
+  color: var(--body-text-color);
+}
+
+.hero-button:hover::after {
+  top: 0px;
+  left: 0px;
+}
+#types-of-interventions:target {
+  scroll-margin-top: 10rem;
+}
+.types-of-interventions {
+  background: var(--secondary-color);
+  padding: 1rem;
+  padding-block: 4rem;
+  gap: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font: 2rem var(--font-headers);
+  color: var(--body-text-color);
+  font-weight: 600;
+}
+/* List of benefits/drawbacks */
+.items-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.item {
+  background: var(--body-text-color);
+  color: var(--off-white);
+  padding: 2rem;
+  border-radius: 0.25rem;
+  display: grid;
+  gap: 1rem;
+}
+.item-intro {
+  display: flex;
+  gap: 1rem;
+}
+.item-number, .item-title {
+  font: 1.25rem var(--font-body);
+  color: var(--tertiary-color);
+  font-weight: 600;
+  width: max-content;
+}
+.item-description {
+  grid-column: 1 / 3;
+  font: 0.9rem var(--font-body);
+  color: var(--off-white);
+  font-weight: 300;
+}
+/* Responsive */
+@media (min-width: 48rem) {
+  .hero-content {
+    grid-column: 1 / 3;
+    gap: 3rem;
+    padding: 3.5rem;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-subtitle {
+    font: 1.2rem;
+  }
+  header {
+    padding: 1rem 3rem;
+  }
+}
+@media (min-width: 64rem) {
+  header {
+    padding: 1rem 5rem;
+  }
+  nav {
+    position: unset;
+    display: block;
+    background: unset;
+    box-shadow: unset;
+  }
+  nav ul {
+    display: flex;
+    gap: 3rem;
+  }
+  nav a {
+    color: var(--body-text-color);
+    width: fit-content;
+    padding-inline: 0;
+    height: 3rem;
+    border-block-end: 0.25rem solid rgba(255, 255, 255, 0);
+    transition: none;
+  }
+  nav a:hover {
+    color: var(--body-text-color);
+    border-block-end: 0.25rem solid var(--body-text-color);
+    background: transparent;
+    box-shadow: none;
+    transition: none;
+  }
+  .active {
+    border-block-end: 0.25rem solid var(--body-text-color);
+    height: 3rem;
+  }
+  .nav-toggle-label::before {
+    display: none;
+  }
+  .hero-intro-wrap {
+    align-content: center;
+  }
+  .hero-title {
+    font-size: 4rem;
+  }
+  .hero-subtitle {
+    font-size: 1.4rem;
+  }
 }
