@@ -43,10 +43,10 @@ main {
   gap: 2rem;
 }
 .slideshow-first {
-  animation: slideshow-second 10s infinite;
+  animation: slideshow-second 8s infinite;
 }
 .slideshow-second {
-  animation: slideshow1 12s infinite;
+  animation: slideshow1 10s infinite;
 }
 
 @keyframes slideshow-second {
