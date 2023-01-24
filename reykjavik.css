@@ -7,9 +7,6 @@ body {
     font-family: "Open Sans",Arial,sans-serif;
 }
 .wrapper {
-    --margin: 5rem;
-
-    min-height: calc(100vh - 2*var(--margin));
     width: 95vw;
     margin-inline: auto;
     background-color:  #f7f7f7;

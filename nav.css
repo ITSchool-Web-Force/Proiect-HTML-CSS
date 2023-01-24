@@ -18,10 +18,10 @@ nav {
     margin: 1rem;
     justify-content: center;
     align-items: center;
-    transition: transform 5s ease-in;
+    transition: transform 5s;
 }
 .menu-item:hover {
-    font-size: 1.1rem;
+    transform: scale (105%);
     color: #11316c;
     background-color: rgba(186, 185, 185, 0.5);
     border-radius: 1rem;

@@ -96,7 +96,7 @@ article:hover {
     height: 27vh;
     width: auto;
     border-radius: 1rem;
-    transition: transform 1s;
+    transition: transform 3s;
 }
 .content-item img:hover {
     transform: scale(105%);
