@@ -24,7 +24,7 @@
     </header>
 
     <main>
-      <label class="container">
+      <div class="container">
         <input
           type="text"
           id="fname"
@@ -39,12 +39,7 @@
           placeholder="Last Name"
           required
         />
-        <input
-          type="email"
-          id="email"
-          placeholder="example@example.com"
-          pattern=".+@globex\.com"
-        />
+        <input type="email" id="email" placeholder="example@example.com" />
         <input type="date" id="start" value="2023-01-26" />
         <div class="container-appt">
           <h2 class="title-appt">Do you have a preferred Tattoo Artist?</h2>
@@ -84,7 +79,7 @@
           <h2 class="title-appt">Here you can upload reference images:</h2>
           <input type="file" id="photo" multiple required />
         </div>
-      </label>
+      </div>
       <button class="submit-btn" type="submit">Submit</button>
     </main>
 
