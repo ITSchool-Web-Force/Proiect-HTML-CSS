@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="appointment.css" rel="stylesheet" />
-    <script
-    src="https://kit.fontawesome.com/8bda2fb56c.js"
-    crossorigin="anonymous"
-  ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="header.footer.css" rel="stylesheet" />
+    <link href="appointment.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/8bda2fb56c.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Appointment</title>
   </head>
   <body>
@@ -44,29 +45,40 @@
           placeholder="example@example.com"
           pattern=".+@globex\.com"
         />
-        <input type="date" id="start"
-       value="2023-01-26">
+        <input type="date" id="start" value="2023-01-26" />
         <div class="container-appt">
           <h2 class="title-appt">Do you have a preferred Tattoo Artist?</h2>
           <p class="text-appt">
             If the artist you mentioned is not available, another artist will
             get in touch with you.
           </p>
-          <input type="text" id="text" required minlength="30" placeholder="type.." >
+          <input
+            type="text"
+            id="text"
+            required
+            minlength="30"
+            placeholder="type.."
+          />
         </div>
         <div class="container-appt">
           <h2 class="title-appt">Please describe your idea.</h2>
           <p class="text-appt">
             Please let us know, if you are in New York just for spcial days.
           </p>
-          <input type="text" id="text" minlength="30" placeholder="type.." required />
+          <input
+            type="text"
+            id="text"
+            minlength="30"
+            placeholder="type.."
+            required
+          />
         </div>
         <div class="container-appt">
           <h2 class="title-appt">
             Help us with a photo of the part of your body to be tattooed:
           </h2>
           <p class="text-appt"></p>
-          <input type="file"  id="photo"required />
+          <input type="file" id="photo" required />
         </div>
         <div class="container-appt">
           <h2 class="title-appt">Here you can upload reference images:</h2>
