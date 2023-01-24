@@ -228,7 +228,7 @@ figure {
     text-decoration: 0;
     color: #dcdfea;
 }
-#sources input + label + .sources-content {
+#sources input ~ .sources-content {
     display: none;
 }
 #sources input:checked ~ .sources-content {
