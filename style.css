@@ -15,18 +15,15 @@ html {
     grid-template-columns: 1fr;
     grid-template-rows: min-content 1fr;
     row-gap: 2em;
+    text-align: center;
 }
 /* Header */
 .top-page {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr min-content;
     grid-column: 1/2;
     grid-row: 1/2;
 }
 .logo {
-    grid-column: 1/2;
-    grid-row: 1/2;
+    text-align: center;
     width: 35%;
     margin: auto;
 }
@@ -35,8 +32,6 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-column: 1/2;
-    grid-row: 2/3;
     background-color: #3b3b3b;
     text-align: center;
 }
@@ -95,15 +90,12 @@ html {
     margin-inline: 0.5em;
 }
 .troops-list {
-    display: grid;
-    grid-template-columns: 1fr;
+    text-align: center;
 }
 .belligerents {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content;
-    grid-column: 1/2;
-    grid-row: 1/2;
 }
 .troops-title {
     grid-column: 1/3;
@@ -123,8 +115,6 @@ html {
     padding: 0;
 }
 .commanders {
-    grid-column: 1/2;
-    grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -137,14 +127,10 @@ html {
     grid-row: 2/3;
 }
 .strength {
-    grid-column: 1/2;
-    grid-row: 3/4;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .casualties {
-    grid-column: 1/2;
-    grid-row: 4/5;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -195,7 +181,7 @@ figure {
     display: none;
 }
 #sources label {
-    display: block;
+    display: flex;
     padding: 0.5em 1.3em;
     cursor: pointer;
     background: #817e7e;
@@ -217,8 +203,9 @@ figure {
 #sources label::after {
     content: '+';
     font-weight: bold;
+    margin-left: auto;
     font-size: 1em;
-    position: absolute;
+    align-items: flex-end;
     inset-inline-end: 0.8em;
     inset-block-start: 0.5em;
 }
@@ -244,50 +231,35 @@ figure {
 #sources input + label + .sources-content {
     display: none;
 }
-#sources input:checked + label + .sources-content {
+#sources input:checked ~ .sources-content {
     display: block;
+}
+.sources-title {
+    font-weight: bold;
 }
 /* PCs */
 @media only screen and (min-width: 768px) {
    /* The Page */
     .the-page{
-        display: grid;
         grid-template-columns: 1fr 4fr 1fr;
-        grid-template-rows: min-content 1fr;
-        row-gap: 2em;
    }
    /* Header */
     .top-page {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr min-content;
         grid-column: 1/4;
-        grid-row: 1/2;
    }
     .logo {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        width: 45%;
-        margin: auto;
+        width: 20%;
    }
    /* Navigation */
     .navigation {
-        grid-column: 1/4;
-        grid-row: 2/3;
-        background-color: #3b3b3b;
-        text-align: center;
-        border-radius: 0.5em;
         padding-inline: 12em;
    }
    /* Page Content */
     .page-content {
         grid-column: 2/3;
-        grid-row: 2/3;
-        background-color: #3b3b3b;
         margin-inline: 1.5em;
    }
     .page-text {
-        text-align: justify;
         padding: 1.8em;
    }
     .page-text p {
@@ -321,29 +293,5 @@ figure {
         border: 0.1em solid black;
         border-radius: 0.5em;
         color:black;
-   }
-    .first {
-        grid-column: 1/2;
-        grid-row: 1/2;
-   }
-    .second {
-        grid-column: 2/3;
-        grid-row: 1/2;
-   }
-    .third {
-        grid-column: 1/2;
-        grid-row: 2/3;
-   }
-    .fourth {
-        grid-column: 2/3;
-        grid-row: 2/3;
-   }
-    .fifth {
-        grid-column: 1/2;
-        grid-row: 3/4;
-   }
-    .sixth {
-        grid-column: 2/3;
-        grid-row: 3/4;
    }
 }
