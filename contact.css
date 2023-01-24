@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+}
+
+.navigare {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 70vw;
+    margin: auto;
+}
+
+.menu {
+    color: rgb(93, 93, 93);
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.menu:hover {
+    color: orange;
+}
+
+.active3 {
+    background-color: orange;
+    padding: 5px 5px;
+    border-radius: 15px;
+    color: white;
+}
+
+.active3:hover {
+    color: white;
+
+}
+
+.contact {
+    margin-block-start: 3rem;
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(209, 197, 193), rgb(95, 216, 61));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-block-start: 2rem;
+}
+
+.info-text {
+    font-size: 10px;
+    background: -webkit-linear-gradient(rgb(209, 197, 193), rgb(86, 91, 84));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.map-contact {
+    margin-inline-start: 3rem;
+}
+
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer {
+    background-color: gray;
+    height: 100px;
+    display: flex;
+    gap: 3rem;
+    margin-block-start: 3rem;
+}
+
+.nav2 {
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 1rem;
+}
+
+.menu-footer {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-block-start: 5px;
+    font-weight: bold;
+    gap: 15px;
+}
+
+.info-footer {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 5px;
+    gap: 15px;
+}
+
+.footer-text {
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+
+
+
+
+
+@media (min-width: 1078px) {
+
+    .navigare {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .logo {
+        width: 8%;
+        margin-inline-start: 7rem;
+        display: inline-block;
+        text-align: center;
+        height: 80px;
+    }
+    
+    .nav {
+        position: absolute;
+        right: 0;
+        margin-inline-end: 11rem;
+        margin-block-start: 1.8rem;
+    }
+    
+    .menu, .menu-active {
+        color: rgb(99, 99, 99);
+        text-decoration: none;
+        margin-left: 2rem;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family:"Roboto",sans-serif;
+        letter-spacing: 0.5px;
+    }
+
+    .active3 {
+        color: white;
+        background-color: orange;
+        padding: 10px 15px;
+        border-radius: 25px;
+    }
+    
+    .menu:hover {
+       color: orange;
+    }
+    
+    .active3:hover {
+        color: rgb(255, 255, 255);
+    }
+
+
+    .map-contact {
+        margin-inline-start: 40%;
+    }
+
+    .info-block {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        margin-block-start: 2rem;
+    }
+
+    .info-text {
+        font-size: 20px;
+        background: -webkit-linear-gradient(rgb(209, 197, 193), rgb(86, 91, 84));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    .footer {
+        margin-block-start: 6rem;
+        background-color: rgb(90, 86, 86);
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .nav2 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-inline-start: 5rem;
+        justify-content: center;
+    }
+    
+    .menu-footer{
+        color: white;
+        text-transform: uppercase;
+        text-decoration:none;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+    }
+    
+    .menu-footer:hover{
+        color: orange;
+    }
+    
+    .info-footer {
+        margin-inline-start: 60rem;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        color: white;
+    }
+    
+    .footer-text {
+        color: white;
+        text-transform: uppercase;
+        text-decoration:none;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+}
