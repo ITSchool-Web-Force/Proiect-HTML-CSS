@@ -9,20 +9,21 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"
     />
+    <link rel="icon" type="image/x-icon" href="/images/baricare_logo.svg">
     <title>BariCare</title>
   </head>
   <body>
     <div class="wrapper">
       <!-- Header (Logo + Nav Menu)-->
       <header>
-        <span class="logo">
+        <div class="logo">
           <img
             src="/images/baricare_logo.svg"
             class="logo-svg"
             alt="BariCare Logo"
           />
           <p>Care</p>
-        </span>
+        </div>
         <input type="checkbox" class="nav-toggle" id="nav-toggle" />
         <label
           for="nav-toggle"
@@ -39,7 +40,6 @@
           </ul>
         </nav>
       </header>
-
       <article class="hero-intro-wrap">
         <div class="hero-content">
             <h1 class="hero-title">Empower your weight loss journey</h1>
@@ -48,43 +48,45 @@
         </div>
           <img src="/images/hero_image.jpg" alt="Person happy after weight loss" class="hero-image">
       </article>
-
       <!-- Types of surgerios -->
       <section id="types-of-interventions" class="types-of-interventions">
         <h1>Types of interventions</h1>
+        <p class="item-description content-d">
+          Learn more about the top 3 most popular and effective interventions for weight loss.
+        </p>
           <div class="items-wrap">
             <!-- Item #1-->
             <div class="item">
-             <div class="item-intro">
+             <div class="item-intro home">
                <span class="item-number">01</span>
                 <p class="item-title">Gastric sleeve</p>
               </div>
               <p class="item-description">
                 It is a weight loss procedure that involves reducing the size of the stomach by removing a large portion of it.
               </p>
-              <a href="gastric_sleeve.html" class="read-more-button">Read more</a>
+              <a href="gastric_sleeve.html" class="read-more-button"><i class="fa-solid fa-arrow-right"></i></a>
             </div>
             <!-- Item #2-->
             <div class="item">
-              <div class="item-intro">
+              <div class="item-intro home">
                 <span class="item-number">02</span>
                  <p class="item-title">Gastric bypass</p>
                </div>
                <p class="item-description">
                 It is a weight loss procedure that involves creating a smaller stomach and rerouting the small intestine to this new stomach.
                </p>
-               <a href="gastric_bypass.html" class="read-more-button">Read more</a>
+               <a href="gastric_bypass.html" class="read-more-button"><i class="fa-solid fa-arrow-right"></i></a>
              </div>
             <!-- Item #3-->
             <div class="item">
-              <div class="item-intro">
+              <div class="item-intro home">
                 <span class="item-number">03</span>
                  <p class="item-title">Gastric band</p>
                </div>
                <p class="item-description">
                 It is a weight loss procedure that involves placing an adjustable band around the upper part of the stomach to create a small stomach pouch.
                </p>
-               <a href="gastric_band.html" class="read-more-button">Read more</a>
+               <a href="gastric_band.html" class="read-more-button"><i class="fa-solid fa-arrow-right"></i></a>
              </div>
         </div>
       </section>
@@ -106,12 +108,11 @@
           <div class="item">6</div>
         </div>
       </section>
-
       !-->
-
     </div>
     <footer class="footer">
-      <p>Author: Silviu</p>
+      <p><i class="fa-regular fa-copyright"></i>Silviu 2023</p>
+      <a href="https://www.linkedin.com/in/alexscripcariuc/" target="_blank"><i class="fa-brands fa-linkedin social"></i></a>
     </footer>
   </body>
 </html>
