@@ -9,7 +9,6 @@
 body {
     height: 57rem;
     font-family: 'Barlow', sans-serif;
-    background-color: 333;
     line-height: 1.6;
     z-index:1;
     min-height:100vh;
@@ -32,7 +31,6 @@ header {
     align-content: space-between;
     justify-items: center;
     justify-content: end;
-    margin-bottom: 5rem;
 }
 .header ul {
     margin: 0;
@@ -221,7 +219,7 @@ input.buton.trimite {
     background-color: #FFF8EE;
     font-size: 1.5ch;
     width: auto;
-    padding: 0.5rem;
+    padding: 0.4rem;
     color: black;
     opacity: 80%;
     border: 0;
@@ -231,12 +229,6 @@ input.buton.trimite {
 }
 .showcase-form input:focus {
     outline: none;
-}
-.showcase::before,
-.showcase::after {
-    content: "";
-    position: absolute;
-    transform: skewY(-30deg);
 }
 .produse {
     display: flex;
