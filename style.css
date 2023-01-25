@@ -14,6 +14,22 @@
 html {
   scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+  /* required - the "base" of the bar - mostly for setting width */
+  width: 0.85rem;
+}
+ 
+body::-webkit-scrollbar-track {
+  /* the "track" of the bar - great for customizing "background" colors */
+  border-radius: 0.5rem;
+  background: var(--main-color);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  /* the actual draggable element, the star of the show! */
+  background: var(--color-pop);
+  border-radius: 0.5rem;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -457,13 +473,13 @@ textarea::placeholder {
   }
   nav a:hover {
     color: var(--body-text-color);
-    border-block-end: 0.25rem solid var(--body-text-color);
+    border-block-end: 0.25rem solid var(--color-pop);
     background: transparent;
     box-shadow: none;
     transition: none;
   }
   .active {
-    border-block-end: 0.25rem solid var(--body-text-color);
+    border-block-end: 0.25rem solid var(--color-pop);
     height: 3rem;
   }
   .nav-toggle-label::before {
