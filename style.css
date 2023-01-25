@@ -418,6 +418,10 @@ textarea {
   font: 1rem var(--font-body);
   background: transparent;
   border-block-end: 1px solid var(--color-pop);
+  resize: none;
+}
+textarea {
+  min-height: 7.5rem;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
