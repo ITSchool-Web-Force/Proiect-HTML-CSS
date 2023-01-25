@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: white;
-    font-family: "Open Sans",Arial,sans-serif;
+    font-family: Fira Sans,-apple-system,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 header {
     background-image: url("../poze_index/ghetari.jpg");
@@ -17,7 +17,7 @@ header h1 {
     margin: auto;
     font-size: 2.7rem;
     font-weight: bold;
-    color:rgba(255, 255, 255, 0.3);
+    color:rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     font-family: "Playfair Display",Georgia,serif;
     margin-block-end: 0;
@@ -50,25 +50,23 @@ h1 {
     display: block;
     text-align: center;
     margin: 2rem 1rem;
-    font-family: "Open Sans",Arial,sans-serif;
     font-size: 1rem;
     color:  #11316c;
 }
 p {
     display: block;
     margin: 1rem 1rem;
-    font-family: "Open Sans",Arial,sans-serif;
     font-size: 1rem;
     color:  #11316c;
 }
-article {
+.descriere {
     background-color: white;
     margin-inline: auto;
     box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
     box-sizing: border-box;
     transition: transform 2s;
 }
-article:hover {
+.content-item:hover, .descriere:hover {
     transform: scale(101%);
     box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(13, 213, 213, 0.5);
 }
@@ -135,6 +133,7 @@ article:hover {
 @media (min-width: 712px) {
     header {
         background-image: url('../poze_index/oras.jpg');
+        background-size: cover;
     }
     main {
         display: grid;
@@ -153,7 +152,7 @@ article:hover {
     .menu-item {
         font-size: 1rem;
     }
-    article {
+    .descriere {
         width: 90vw;
         padding: 1rem;
         border-radius: 1rem;
