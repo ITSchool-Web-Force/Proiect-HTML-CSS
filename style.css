@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap");
+
+:root {
+  --gold: #bda96b;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
+}
+header {
+  display: flex;
+  background-color: #000;
+  flex-direction: column;
+  align-items: center;
+  border-block-end: 0.25rem solid #bda96b;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 10;
+}
+.first-line {
+  display: inline-flex;
+  width: 100vw;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-block: 0.25rem;
+}
+.main-group {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.user {
+  display: inline-flex;
+  cursor: pointer;
+  transition: filter 0.5s ease;
+  margin-inline-start: 1rem;
+}
+.user:hover {
+  filter: opacity(50%);
+}
+.shopping-bag {
+  display: inline-flex;
+  cursor: pointer;
+  transition: filter 0.5s ease;
+  margin-inline-end: 1rem;
+}
+.shopping-bag:hover {
+  filter: opacity(50%);
+}
+.text {
+  color: var(--gold);
+  font-size: 0.8rem;
+  font-style: italic;
+  font-family: "Inter", sans-serif;
+  animation-name: righttoleft;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes righttoleft {
+  0% {
+    transform: translateX(17.5rem);
+  }
+  100% {
+    transform: translateX(-17.5rem);
+  }
+}
+.logo {
+  width: 250px;
+  height: auto;
+  padding-block: 0.75rem;
+  background-color: #000;
+}
+.navigation {
+  display: inline-flex;
+  width: 100vw;
+  height: 2rem;
+  background-color: #fff;
+  justify-content: center;
+  padding-block: 0.5rem;
+}
+.navigation .nav-item {
+  color: #000;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-inline-end: 1rem;
+  position: relative;
+  transition: all ease-in-out 250ms;
+}
+.nav-item:last-child {
+  margin-inline-end: 0;
+}
+.navigation .nav-item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.25rem;
+  width: 0%;
+  background-color: var(--gold);
+  transition: all ease-in-out 250ms;
+}
+.navigation .nav-item:hover::after {
+  width: 100%;
+}
+.navigation .nav-item:hover {
+  color: var(--gold);
+}
+main {
+  width: 100vw;
+  background-color: #fff;
+}
+h3 {
+  color: #fff;
+  background-color: var(--gold);
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-block: 0.5rem;
+  margin-block-end: 0.25rem;
+  text-align: center;
+}
+.group-new {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(5, 20%);
+  padding-block-end: 0.25rem;
+}
+.mono-det,
+.mono-fr,
+.lapi-fro,
+.lapi-det,
+.tab-det,
+.tab-pers,
+.bath-fro,
+.bath-det,
+.chair-det,
+.chair-fro {
+  max-width: 50vw;
+  height: auto;
+}
+.featured-title {
+  color: #fff;
+  background-color: var(--gold);
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-block: 0.5rem;
+  text-align: center;
+}
+.feature-group {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 2.5rem;
+  background-color: #fff;
+  padding-block: 3rem;
+}
+.vogue,
+.tatler,
+.elle,
+.interior-design,
+.gq {
+  max-width: 8vw;
+  height: auto;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-block-start: 0.25rem solid #bda96b;
+}
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #000;
+}
+.icon img {
+  display: inline-flex;
+  padding-block: 2rem;
+  cursor: pointer;
+  transition: filter 0.5s ease;
+}
+.icon img:hover {
+  filter: opacity(50%);
+}
+.copyright-text {
+  display: inline-flex;
+  color: var(--gold);
+  font-size: 0.8rem;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  padding-block: 0.25rem;
+  justify-content: center;
+}
+.products-img {
+  width: 100vw;
+  height: auto;
+}
+
+@media (min-width: 280px) and (max-width: 374px) {
+  .user {
+    margin-inline-start: 0.5rem;
+  }
+  .logo {
+    width: 10rem;
+    height: auto;
+  }
+  .shopping-bag {
+    margin-inline-end: 0.5rem;
+  }
+  .navigation .nav-item {
+    font-size: 0.7rem;
+    margin-inline-end: 0.35rem;
+  }
+  h3 {
+    font-size: 0.75rem;
+  }
+  .featured-title {
+    font-size: 0.75rem;
+  }
+  .feature-group {
+    gap: 1rem;
+    padding-block: 1.5rem;
+  }
+  .vogue,
+  .tatler,
+  .elle,
+  .interior-design,
+  .gq {
+    max-width: 12vw;
+    height: auto;
+  }
+}
+@media (min-width: 450px) and (max-width: 800px) {
+  .user {
+    margin-inline-start: 2rem;
+  }
+  .shopping-bag {
+    margin-inline-end: 2rem;
+  }
+}
+@media (min-width: 801px) {
+  .user {
+    margin-inline-start: 3rem;
+  }
+  .logo {
+    width: 18.75rem;
+    height: auto;
+  }
+  .shopping-bag {
+    margin-inline-end: 3rem;
+  }
+  .navigation {
+    height: 2.25rem;
+    padding-block: 0.5rem;
+  }
+  .navigation .nav-item {
+    font-size: 1rem;
+    margin-inline-end: 2rem;
+  }
+}
