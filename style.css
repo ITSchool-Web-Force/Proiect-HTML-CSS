@@ -428,6 +428,9 @@ input::placeholder,
 textarea::placeholder {
   opacity: 0.5;
 }
+.logo-link {
+  text-decoration: none;
+}
 /* Responsive */
 @media (min-width: 48rem) {
   .content-d {
