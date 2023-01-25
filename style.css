@@ -288,18 +288,33 @@ h1 {
 }
 .footer {
   background: var(--body-text-color);
-  height: 3rem;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
-  justify-content: space-evenly;
-  padding-inline: 1rem;
   font: 1rem var(--font-body);
   color: var(--off-white);
+  padding: 1rem;
+  flex-direction: column;
+}
+.footer-part {
+  display: flex;
+  gap: 1rem;
+}
+.footer li {
+  list-style-type: none;
+}
+.footer-links ul {
+  padding: 0;
 }
 .footer a {
   text-decoration: none;
   color: var(--off-white);
+}
+.footer-links {
+  text-align: center;
+}
+.footer-links a {
+  color: var(--secondary-color);
 }
 .social {
   scale: 1.5;
@@ -434,6 +449,14 @@ textarea::placeholder {
   }
   header {
     padding: 1rem 3rem;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .footer-links ul {
+    display: flex;
+    gap: 1rem;
   }
 }
 @media (min-width: 64rem) {
