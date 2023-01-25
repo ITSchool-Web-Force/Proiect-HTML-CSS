@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Fira Sans,-apple-system,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+header {
+    background-image: url("../poze_descopera/poza_aurora_boreala.jpg");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+header h1 {
+    margin: auto;
+    font-size: 2.7rem;
+    font-weight: bold;
+    color:rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;  
+    font-family: "Playfair Display",Georgia,serif;
+    margin-block-end: 0;
+    transition: transform 3s;
+}
+header h1:hover {
+    transform: scale(130%);
+}
+header h2 {
+    margin: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: "Playfair Display",Georgia,serif;
+    margin-block-start: 0;
+    transition: transform 3s;
+}
+header h2:hover{
+    transform: translateY(-1rem);
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(242, 241, 241);
+    border-radius: 2rem;
+    padding: 1px;
+    box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
+    box-sizing: border-box;
+    padding-inline: 1rem;
+    transition: transform 2s;
+}
+.item:hover {
+    transform: scale(101%);
+    box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(13, 213, 213, 0.5);
+}
+.item h2 {
+    text-align: center;
+}
+.item img {
+    border-radius: 2rem;
+    margin-block: auto;
+}
+.item p {
+    margin-block: 0;
+    padding: 1rem;
+}
+.text {
+    width:95vw;
+    height: auto;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color:  #11316c;
+}
+.text h2 {
+    text-align: center;
+}
+.text h1 {
+    margin:1rem auto 0;
+    font-size: 3rem;
+    text-align: center;
+} 
+@media (min-width: 450px) {
+    header h1 {
+        font-size: 4rem;
+    }
+    nav {
+        justify-content: flex-end;
+    }
+    .text {
+        width: 80vw;
+    }
+}
+@media (min-width: 1100px) {
+    .item {
+        border: 1px solid grey;
+        border-radius: 3rem;
+        padding: 1rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-areas: 
+        ".  TITLU  TITLU    ." 
+        ".  IMG    PARAGRAF .";
+        grid-template-columns: 0.2fr 1fr 1fr 0.2fr;
+        grid-template-rows: 0.2fr 2fr;
+    }
+    .text img {
+        grid-area: IMG;
+        width: 30vw;
+        border-radius: 15rem;
+    }
+    .text p {
+        grid-area: PARAGRAF;
+    }
+    .text h2 {
+        grid-area: TITLU;
+        margin-inline: auto;
+    }
+    header h1 {
+        font-size: 5rem;
+    }
+    .menu-item {
+        font-size: 1rem;
+    }
+    .text {
+        width: 70vw;
+    }
+    .main_paragraph {
+        display: grid;
+        grid-template-areas: 
+        "paragraf1 . paragraf2 . paragraf3";
+        border-radius: 1rem;
+        padding-inline: 1rem;
+        margin-block: 0;
+        gap: 1rem;
+    }
+    #paragraf1 {
+        border-radius: 2rem;
+        background-color: rgb(242, 241, 241);
+        padding: 1.5rem;
+        border: 1px solid gray;
+        box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
+        grid-area: paragraf1;
+        transition: transform 2s;
+    }
+    #paragraf2 {
+        border-radius: 2rem;
+        background-color: rgb(242, 241, 241);
+        padding: 1.5rem;
+        border: 1px solid gray;
+        box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
+        grid-area: paragraf2;
+        transition: transform 2s;
+    }
+    #paragraf3 {
+        border-radius: 2rem;
+        background-color: rgb(242, 241, 241);
+        padding: 1.5rem;
+        border: 1px solid gray;
+        box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
+        grid-area: paragraf3;
+        transition: transform 2s;
+    }
+    #paragraf1:hover {
+        transform: scale(101%);
+        box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(13, 213, 213, 0.5);
+    }
+    #paragraf2:hover {
+        transform: scale(101%);
+        box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(13, 213, 213, 0.5);
+    }
+    #paragraf3:hover {
+        transform: scale(101%);
+        box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(13, 213, 213, 0.5);
+    }
+}
