@@ -246,6 +246,18 @@ footer {
 
 @media (min-width: 1000px) {
    
+    .exterior{
+        max-width: 45%;
+    }
+
+    .main-contact{
+        justify-items: center;
+    }
+
+    .img{
+        max-width: 35%;
+    }
+
     .nav {
         gap: 7rem;
     }
@@ -265,11 +277,6 @@ footer {
 
     .logo {
         gap: 15rem;
-    }
-
-    .nav {
-        font-size: 3rem;
-        padding: 2rem;
     }
 
     .main-index {
