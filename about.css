@@ -46,7 +46,7 @@ main {
   animation: slideshow-second 9s infinite;
 }
 .slideshow-second {
-  animation: slideshow1 14s infinite;
+  animation: slideshow1 9s infinite;
 }
 
 @keyframes slideshow-second {
