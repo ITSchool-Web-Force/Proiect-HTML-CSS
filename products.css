@@ -138,15 +138,16 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-block-end: 5rem;
+  padding: 0 2rem 5rem 2rem;
   border-block-end: 0.25rem solid var(--gold);
 }
 .armchair-group {
-  border-block-end: none;
+  border-block-end: 0;
 }
 .products {
   max-width: 25vw;
   height: auto;
+  cursor: pointer;
 }
 .prod-area {
   max-width: 30rem;
@@ -274,6 +275,20 @@ footer {
   }
   .shopping-bag {
     margin-inline-end: 2rem;
+  }
+  h3 {
+    font-size: 0.75rem;
+  }
+  p {
+    font-size: 0.5rem;
+  }
+  button {
+    color: #fff;
+    background-color: var(--gold);
+    font-size: 0.5rem;
+    padding: 0.05rem 0.25rem;
+    border: none;
+    cursor: pointer;
   }
 }
 @media (min-width: 801px) {
