@@ -43,11 +43,9 @@ main {
   gap: 2rem;
 }
 .slideshow-first {
-  animation: slideshow-second 9s infinite;
+  animation: slideshow-second 8s infinite;
 }
-.slideshow-second {
-  animation: slideshow1 9s infinite;
-}
+
 
 @keyframes slideshow-second {
   0% {
@@ -60,24 +58,6 @@ main {
   }
   100% {
     content: url("incapere4.png");
-    width: 70%;
-  }
-}
-@keyframes slideshow1 {
-  0% {
-    content: url("incapere5.png");
-    width: 70%;
-  }
-  33% {
-    content: url("incapere6.png");
-    width: 70%;
-  }
-  66% {
-    content: url("incapere8.png");
-    width: 70%;
-  }
-  100% {
-    content: url("incapere7.png");
     width: 70%;
   }
 }
