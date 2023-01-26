@@ -41,10 +41,13 @@ body {
 .title {
     padding-top: 5rem;
     text-align: center;
+    color: red;
+    font-size: 4vh;
 }
 .subtitle {
     padding-top: 4rem;
     text-align: center;
+    font-size: 2vh;
 }
 .story {
     display: grid;
@@ -108,9 +111,14 @@ body {
         text-shadow: 0.2rem 0.2rem 0.4rem black;
         }
     .nav ul {
-        display: flex;
         justify-content: flex-end;
         gap: 1rem;
+        font-size: 2.5vh;
+    }
+    .title {
+        font-size: 4vh;
+    }
+    .subtitle {
         font-size: 2.5vh;
     }
     .story {
