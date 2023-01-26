@@ -145,9 +145,6 @@ main {
 .open-group:hover .interior-right {
   transform: translateX(100%);
 }
-.open-group:hover .quote {
-  display: block;
-}
 .interior-left,
 .interior-right {
   max-width: 50vw;
@@ -157,10 +154,8 @@ main {
 .quote {
   position: absolute;
   z-index: 1;
-  font-size: 1rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
+  width: 100vw;
+  height: auto;
 }
 .story-container {
   display: grid;
@@ -252,14 +247,14 @@ footer {
 
 @media (min-width: 280px) and (max-width: 449px) {
   .user {
-    margin-inline-start: 0.5rem;
+    margin-inline-start: 1.25rem;
   }
   .logo {
     width: 10rem;
     height: auto;
   }
   .shopping-bag {
-    margin-inline-end: 0.5rem;
+    margin-inline-end: 1.25rem;
   }
   .navigation .nav-item {
     font-size: 0.7rem;

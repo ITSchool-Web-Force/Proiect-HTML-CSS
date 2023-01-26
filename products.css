@@ -18,7 +18,7 @@ header {
   background-color: #000;
   flex-direction: column;
   align-items: center;
-  border-block-end: 0.25rem solid #bda96b;
+  border-block-end: 0.25rem solid var(--gold);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
   position: relative;
   z-index: 10;
@@ -126,7 +126,51 @@ main {
   width: 100vw;
   background-color: #fff;
 }
-
+.banner {
+  width: 100vw;
+  height: auto;
+}
+.sideboard-group,
+.table-group,
+.armchair-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-end: 5rem;
+  border-block-end: 0.25rem solid var(--gold);
+}
+.armchair-group {
+  border-block-end: none;
+}
+.products {
+  max-width: 30vw;
+  height: auto;
+}
+.prod-area {
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prod-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  gap: 0.25rem;
+  margin-block-end: 0.35rem;
+}
+h3,
+p {
+  font-family: "Inter", sans-serif;
+}
+button {
+  color: #fff;
+  background-color: var(--gold);
+  padding: 0.1rem 0.5rem;
+  border: none;
+}
 .featured-title {
   color: #fff;
   background-color: var(--gold);
@@ -159,7 +203,7 @@ footer {
   flex-direction: column;
   width: 100vw;
   background-color: rgba(255, 255, 255, 0.8);
-  border-block-start: 0.25rem solid #bda96b;
+  border-block-start: 0.25rem solid var(--gold);
 }
 .social-media {
   display: flex;
@@ -205,9 +249,6 @@ footer {
   .navigation .nav-item {
     font-size: 0.7rem;
     margin-inline-end: 0.35rem;
-  }
-  h3 {
-    font-size: 0.75rem;
   }
   .featured-title {
     font-size: 0.75rem;
