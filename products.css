@@ -133,6 +133,7 @@ main {
 .sideboard-group,
 .table-group,
 .armchair-group {
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -144,7 +145,7 @@ main {
   border-block-end: none;
 }
 .products {
-  max-width: 30vw;
+  max-width: 25vw;
   height: auto;
 }
 .prod-area {
