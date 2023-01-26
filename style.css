@@ -7,14 +7,10 @@
     padding: 0; 
 }
 body {
-    height: 57rem;
     font-family: 'Barlow', sans-serif;
     line-height: 1.6;
     z-index:1;
     min-height:100vh;
-}
-body::-webkit-scrollbar{
-    display: none;
 }
 a {
     color: rgb(16, 16, 17);
@@ -30,7 +26,6 @@ header {
     align-items: center;
     align-content: space-between;
     justify-items: center;
-    
 }
 .header ul {
     margin: 0;
