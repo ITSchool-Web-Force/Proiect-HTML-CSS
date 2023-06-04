@@ -91,7 +91,7 @@ p {
     margin: 1rem;
 }
 .content-item img {
-    height: 27vh;
+    height: auto;
     width: auto;
     border-radius: 1rem;
     transition: transform 3s;
