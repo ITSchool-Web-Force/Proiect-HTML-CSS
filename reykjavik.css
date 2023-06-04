@@ -20,6 +20,7 @@ header {
     flex-direction: column;
     background-image: url("../poze_reykjavik/ghetari.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 header h1 {
     margin-inline: auto;

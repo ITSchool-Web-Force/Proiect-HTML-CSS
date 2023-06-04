@@ -5,10 +5,11 @@ body {
 }
 header {
     background-image: url("../poze_descopera/poza_aurora_boreala.jpg");
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
 }
 header h1 {
     margin: auto;
