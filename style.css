@@ -96,6 +96,7 @@ p {
     width: auto;
     border-radius: 1rem;
     transition: transform 3s;
+    padding-inline: 0.5rem;
 }
 .content-item img:hover {
     transform: scale(105%);
