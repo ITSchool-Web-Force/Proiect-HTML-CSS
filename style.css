@@ -83,7 +83,7 @@ p {
     justify-content: center;
     align-items: center;
     width: 80vw;
-    height: 40vh;
+    height: auto;
     background-color:white;
     border: 1px solid grey;
     box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(77, 78, 78, 0.5);
@@ -96,7 +96,7 @@ p {
     width: auto;
     border-radius: 1rem;
     transition: transform 3s;
-    padding-inline: 0.5rem;
+    padding-inline: 1rem;
 }
 .content-item img:hover {
     transform: scale(105%);
@@ -109,13 +109,17 @@ p {
     header h1 {
         font-size: 4rem;
     }
+    content-item {
+        width: 65vw;
+    }
 }
 @media (min-width: 600px) {
     header h1 {
         font-size: 5rem;
     }
     .content-item {
-        height: 60vh;
+        height: 25vh;
+        width: 50vw;
     }
     header {
         background-image: url("../poze_index/islanda_house.jpg");
@@ -138,7 +142,6 @@ p {
     .content-item {
         grid-area: CONTENT-ITEM;
         width: 37vw;
-        height: 40vh;
     }
     .menu-item {
         font-size: 1rem;
@@ -176,7 +179,8 @@ p {
         font-size: 7rem;
     }
     .content-item {
-        height: 40vh;
+        width: 25vw;
+        height: auto;
     }
 }
 
