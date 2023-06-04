@@ -188,7 +188,7 @@ p {
         height: 40vh;
     }
     .content-item img {
-        height: 35vh;
+        height: auto;
         width: auto;
     }
 }
